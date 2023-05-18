@@ -14,7 +14,9 @@
       color: white;
       border: 5px solid gold;
       display: inline-flex;
-      flex-direction: column;
+      /* flex-direction: column; */
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     /*
@@ -26,11 +28,12 @@ children of the .container class.
     } */
 
     .container>* {
-      flex-basis: 100px;
+      width: 100px;
     }
 
     .red {
       background-color: #eb4d4b;
+      order:10;
     }
 
     .orange {
@@ -47,6 +50,7 @@ children of the .container class.
 
     .blue {
       background-color: #4834d4;
+      order: 50;
     }
 
     .indigo {
