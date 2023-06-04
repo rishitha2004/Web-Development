@@ -20,8 +20,8 @@ app.get("/bmicalculator",function(req,res){
 });
 
 app.post("/bmicalculator",function(req,res){
-    var h1=Number(req.body.height);
-    var w2=Number(req.body.weight);
+    var h1=parseFloat(req.body.height);
+    var w2=parseFloat(req.body.weight);
     var result=w2/(h1*h1);
     res.send("Your BMI:"+result);
 });
